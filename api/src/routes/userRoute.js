@@ -21,6 +21,7 @@ const userController = require("../controllers/userController");
  *                  type: boolean
  *                  description: The user's role
  */
+
 module.exports = (server) => {
     /**
      * @swagger
