@@ -42,4 +42,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(openAiSpec));
 const userRoute     = require("./src/routes/userRoute");
 userRoute(app);
 
+const musicRoute    = require("./src/routes/musicRoute");
+musicRoute(app);
+
 app.listen(port);
