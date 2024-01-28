@@ -17,7 +17,6 @@ exports.create = async (req, res) => {
         fetch("https://api.spotify.com/v1/tracks/" + req.params.id, { method: "GET", headers: { "Authorization": Auth }})
             .then(response => response.json())
             .then(data => {
-                console.log(data);
                 if(data.error) return res.status(400).json({message: "Identifiant Spotify invalide"});
                 // set informations to save in database
                 let newMusic = new Music({
