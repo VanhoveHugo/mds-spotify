@@ -52,8 +52,9 @@ exports.login = async (req, res) => {
                 role: user.role === true ? "admin" : "user"
             };
             const token = await jwt.sign(userData, process.env.JWT_KEY || "StR0ngP4SsW@rd!", { expiresIn: "10h"});
+            req.headers.authorization = token;
+            req.user = userData;
             res.status(200).json({token});
-
         } else {
             return res.status(401).json({message: "Email ou mot de passe incorrect"});
         }

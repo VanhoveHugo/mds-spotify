@@ -20,7 +20,6 @@ exports.verifyToken = async(req, res, next) => {
             res.status(403).json({message: "Accès interdit: token manquant"});
         }
     } catch (error) {
-        console.log(error);
         res.status(403).json({message: "Accès interdit: token invalide"});
     }
 }

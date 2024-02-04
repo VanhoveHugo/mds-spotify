@@ -1,0 +1,155 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Musics",
+    "dateExported": "2024-02-04T21:53:56.141Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "57fd61cb-1a19-450e-a861-16322e9fc269",
+            "name": "Users",
+            "containerId": "",
+            "created": "2024-02-02T15:45:19.054Z",
+            "sortNum": 5000
+        },
+        {
+            "_id": "f8706319-9fc6-46aa-9308-6e2d517e0172",
+            "name": "Votes",
+            "containerId": "",
+            "created": "2024-02-02T15:43:09.320Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "735959ad-4893-4899-b71c-c712922493e6",
+            "name": "Musics",
+            "containerId": "",
+            "created": "2024-02-02T15:45:24.742Z",
+            "sortNum": 25000
+        },
+        {
+            "_id": "df687d02-1eee-4495-9ed5-69d553a37385",
+            "name": "Modules",
+            "containerId": "",
+            "created": "2024-02-02T15:45:39.503Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "4eaacd17-8cce-463e-a0ea-6b1a0095403f",
+            "colId": "913b24ef-5264-4160-970e-e2e0af9eccbe",
+            "containerId": "f8706319-9fc6-46aa-9308-6e2d517e0172",
+            "name": "getVotes",
+            "url": "http://localhost/votes/3Kh8X9lHztqVBTgw30HbXn",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-02-02T15:43:04.327Z",
+            "modified": "2024-02-02T15:43:28.564Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0590e0bb-9036-49eb-88cf-d657cbae2366",
+            "colId": "913b24ef-5264-4160-970e-e2e0af9eccbe",
+            "containerId": "f8706319-9fc6-46aa-9308-6e2d517e0172",
+            "name": "createVote",
+            "url": "http://localhost/votes/3Kh8X9lHztqVBTgw30HbXn",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-02T15:43:52.146Z",
+            "modified": "2024-02-02T15:45:00.860Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YjZhYjRiN2RjNDM3OGYzZThjNWY2NiIsImVtYWlsIjoicm9vdCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzA2ODg2OTYyLCJleHAiOjE3MDY5MjI5NjJ9.SfkjT53_wCJSKtXgXCnCQ4v0cJQ7jkn-wQvur6dWBkg"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cab3acad-233b-466e-aa31-e9e22ac0536d",
+            "colId": "913b24ef-5264-4160-970e-e2e0af9eccbe",
+            "containerId": "57fd61cb-1a19-450e-a861-16322e9fc269",
+            "name": "register",
+            "url": "http://localhost/users/register",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-02-04T20:48:24.861Z",
+            "modified": "2024-02-04T20:49:43.466Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "hugo.vanhove@spotify.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "Hugo123#"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5ec0bec6-2683-4476-a612-509faaaaf9f2",
+            "colId": "913b24ef-5264-4160-970e-e2e0af9eccbe",
+            "containerId": "57fd61cb-1a19-450e-a861-16322e9fc269",
+            "name": "login",
+            "url": "http://localhost/users/login",
+            "method": "POST",
+            "sortNum": 45000,
+            "created": "2024-02-04T20:50:01.337Z",
+            "modified": "2024-02-04T20:50:10.410Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "hugo.vanhove@spotify.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "Hugo123#"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "197a1332-fc58-47ad-a1ea-7baafa715299",
+            "colId": "913b24ef-5264-4160-970e-e2e0af9eccbe",
+            "containerId": "735959ad-4893-4899-b71c-c712922493e6",
+            "name": "addMusic",
+            "url": "http://localhost/musics/1CcLA0eaauck34YEIrvAAq",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-02-04T20:51:02.797Z",
+            "modified": "2024-02-04T20:51:36.887Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3cedcf59-f288-4c9e-91da-984750638fd5",
+            "colId": "913b24ef-5264-4160-970e-e2e0af9eccbe",
+            "containerId": "735959ad-4893-4899-b71c-c712922493e6",
+            "name": "getMusic",
+            "url": "http://localhost/musics/1CcLA0eaauck34YEIrvAAq",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-04T20:55:49.984Z",
+            "modified": "2024-02-04T20:55:58.884Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
