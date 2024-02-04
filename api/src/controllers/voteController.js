@@ -51,8 +51,9 @@ exports.get = async (req, res) => {
         if (!req.params.id) return res.status(400).json({ message: "Merci de renseigner un identifiant de musique" });
 
         // get music
-        const music = await Music.findOne({ provider_id: req.params.id });
-        if (!music) return res.status(400).json({ message: "Musique non enregistrée" });
+        await Music.findOne({ provider_id: req.params.id }).then((music) => {
+            if (!music) return res.status(400).json({ message: "Musique non enregistrée" });
+        });
 
         // get votes
         const votes = await Vote.find({ music_id: req.params.id });
