@@ -11,6 +11,7 @@ exports.create = async (req, res) => {
         });
 
         // set authorization header
+        if(!process.env.SPOTIFY_TOKEN) return res.status(500).json({message: "Une erreur s'est produite lors du traitement"});
         let Auth = "Bearer " + process.env.SPOTIFY_TOKEN;
 
         // check if spotify id is valid with request to spotify api
